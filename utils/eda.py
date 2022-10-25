@@ -14,10 +14,10 @@ vn_synonym_dict = [
 ]
 
 def get_synonyms(term):
-	for ele in vn_synonym_dict:
-		if term in ele:
-			return [_ for _ in ele if _ != term]
-	return []
+    for ele in vn_synonym_dict:
+        if term in ele:
+            return [_ for _ in ele if _ != term]
+    return []
 
 def synonym_replacement(src = ''):
     if src != '':
